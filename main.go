@@ -2,7 +2,17 @@ package main
 
 import "fmt"
 
-// Application entry point
+// Application entry point.
 func main() {
-	fmt.Println("Hello, World!")
+	// Type (`string`) can be omitted.
+	var message string = "Hello, World!"
+
+	// var message string
+
+	// Shorthand.
+	// Cannot be used outside of a function.
+	// message := "Hello, World!"
+
+	// fmt.Print(message)
+	fmt.Println(message)
 }
