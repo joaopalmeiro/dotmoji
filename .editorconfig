@@ -1,0 +1,16 @@
+# Source: https://obem.be/2015/06/01/a-quick-note-on-editorconfig.html
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# More info:
+# - https://github.com/remarkjs/remark-lint/tree/main/packages/remark-lint-hard-break-spaces
+# - https://arcticicestudio.github.io/styleguide-markdown/rules/whitespace.html#trailing
+[*.md]
+trim_trailing_whitespace = false
