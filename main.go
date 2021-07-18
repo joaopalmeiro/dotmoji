@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"sort"
 	"strings"
@@ -48,6 +49,16 @@ func cycleNames(n []string, f func(string)) {
 	for _, v := range n {
 		f(v)
 	}
+}
+
+// Helper function.
+// `reader := bufio.NewReader(os.Stdin)`.
+func getInput(prompt string, r *bufio.Reader) (string, error) {
+	fmt.Print(prompt)
+
+	input, err := r.ReadString('\n')
+
+	return strings.TrimSpace(input), err
 }
 
 // Application entry point.

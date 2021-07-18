@@ -4,7 +4,7 @@ A [Go](https://golang.org/) CLI to generate sequences of colored circles with em
 
 ## References
 
-- The Net Ninja:
+- The Net Ninja ([repo](https://github.com/iamshaunjp/golang-tutorials)):
   - [Go (Golang) Tutorial #1 - Introduction & Setup](https://youtu.be/etSN4X_fCnM).
   - [Go (Golang) Tutorial #2 - Your First Go File](https://youtu.be/RI9ngRqn9N4).
   - [Go (Golang) Tutorial #3 - Variables, Strings & Numbers](https://youtu.be/98tQPM3R3qU).
@@ -22,6 +22,7 @@ A [Go](https://golang.org/) CLI to generate sequences of colored circles with em
   - [Go (Golang) Tutorial #15 - Structs & Custom Types](https://youtu.be/zfMhSFpBSaw).
   - [Go (Golang) Tutorial #16 - Receiver Functions](https://youtu.be/HE6tbWlymmk).
   - [Go (Golang) Tutorial #17 - Receiver Functions with Pointers](https://youtu.be/cgBA5k50At8).
+  - [Go (Golang) Tutorial #18 - User Input](https://youtu.be/20HlPtQuc_g).
 
 ## Notes
 
