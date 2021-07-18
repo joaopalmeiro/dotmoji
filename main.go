@@ -6,6 +6,21 @@ import (
 	"strings"
 )
 
+func sayHello(n string) {
+	fmt.Printf("Hello, %v!\n", n)
+}
+
+// `string` -> `(string, string)` if multiple return values.
+func prepareHello(n string) string {
+	return fmt.Sprintf("Hello, %v!", n)
+}
+
+func cycleNames(n []string, f func(string)) {
+	for _, v := range n {
+		f(v)
+	}
+}
+
 // Application entry point.
 func main() {
 	// Type (`string`) can be omitted.
@@ -86,4 +101,9 @@ func main() {
 
 	// `if`, `else if`, and `else`.
 	// `continue` and `break`.
+
+	sayHello("World")
+	fmt.Println(prepareHello("World"))
+
+	cycleNames([]string{"John", "Mary"}, sayHello)
 }
