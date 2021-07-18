@@ -106,4 +106,18 @@ func main() {
 	fmt.Println(prepareHello("World"))
 
 	cycleNames([]string{"John", "Mary"}, sayHello)
+
+	// Maps: Similar to Python dictionaries.
+	// `map[<keys>]<values>`.
+	itemPrices := map[string]float64{
+		"item1": 4.99,
+		"item2": 7.99,
+	}
+
+	fmt.Println(itemPrices)
+	fmt.Println(itemPrices["item1"])
+
+	for key, value := range itemPrices {
+		fmt.Println(key, value)
+	}
 }
