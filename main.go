@@ -6,6 +6,35 @@ import (
 	"strings"
 )
 
+// Custom type/blueprint.
+type person struct {
+	name string
+	age  int
+}
+
+func newPerson(name string, age int) person {
+	p := person{
+		name: name,
+		age:  age,
+	}
+
+	return p
+}
+
+// Receiver function.
+// `(p person)` or `(p *person)`.
+func (p person) format() string {
+	return fmt.Sprintf("Person: %v (%v years old)", p.name, p.age)
+}
+
+// Receiver function with pointer.
+// For structs, pointers are automatically dereferenced.
+func (p *person) updateAge(age int) {
+	// (*p).age = age
+	// or
+	p.age = age
+}
+
 func sayHello(n string) {
 	fmt.Printf("Hello, %v!\n", n)
 }
@@ -120,4 +149,12 @@ func main() {
 	for key, value := range itemPrices {
 		fmt.Println(key, value)
 	}
+
+	myPerson := newPerson("João", 25)
+
+	fmt.Println(myPerson)
+	fmt.Println(myPerson.format())
+
+	myPerson.updateAge(26)
+	fmt.Println(myPerson.format())
 }

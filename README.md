@@ -17,6 +17,11 @@ A [Go](https://golang.org/) CLI to generate sequences of colored circles with em
   - [Go (Golang) Tutorial #10 - Multiple Return Values](https://youtu.be/ypV7r1ODZCA).
   - [Go (Golang) Tutorial #11 - Package Scope](https://youtu.be/XYK4Rs80q6c).
   - [Go (Golang) Tutorial #12 - Maps](https://youtu.be/v3RodjH1i6c).
+  - [Go (Golang) Tutorial #13 - Pass By Value](https://youtu.be/LBLN4Wu5U4w).
+  - [Go (Golang) Tutorial #14 - Pointers](https://youtu.be/4B2rwYvuiBo).
+  - [Go (Golang) Tutorial #15 - Structs & Custom Types](https://youtu.be/zfMhSFpBSaw).
+  - [Go (Golang) Tutorial #16 - Receiver Functions](https://youtu.be/HE6tbWlymmk).
+  - [Go (Golang) Tutorial #17 - Receiver Functions with Pointers](https://youtu.be/cgBA5k50At8).
 
 ## Notes
 
@@ -34,3 +39,19 @@ A [Go](https://golang.org/) CLI to generate sequences of colored circles with em
   - `%0.1f`: One decimal place.
 - [Standard library](https://pkg.go.dev/std) (built-in packages).
 - Go is a pass-by-value language (it creates "copies" of values when passed into functions).
+- Non-pointer values:
+  - Strings.
+  - Ints.
+  - Floats.
+  - Booleans.
+  - Arrays.
+  - Structs.
+- Pointer wrapper values:
+  - Slices.
+  - Maps.
+  - Functions.
+- [Pointers](https://tour.golang.org/moretypes/1):
+  - A pointer holds the memory address of a value.
+  - `&`: pointer.
+  - `*`: pointer's underlying value.
+  - Use an asterisk (`*`) before the type of an argument in a function for pointers.
