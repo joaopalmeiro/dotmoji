@@ -73,4 +73,17 @@ func main() {
 
 	// `sort.SearchStrings()` for strings.
 	fmt.Println(sort.SearchInts(scores, 50)) // Position.
+
+	// `for` is also used for while loops.
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
+
+	// If one of the two is not needed, use `_`.
+	for index, value := range numbers {
+		fmt.Println(index, value)
+	}
+
+	// `if`, `else if`, and `else`.
+	// `continue` and `break`.
 }
