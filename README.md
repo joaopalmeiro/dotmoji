@@ -15,6 +15,7 @@ A [Go](https://golang.org/) CLI to generate sequences of colored circles with em
   - [Go (Golang) Tutorial #8 - Booleans & Conditionals](https://youtu.be/d5oUb2T2iCE).
   - [Go (Golang) Tutorial #9 - Using Functions](https://youtu.be/X68JmClzap4).
   - [Go (Golang) Tutorial #10 - Multiple Return Values](https://youtu.be/ypV7r1ODZCA).
+  - [Go (Golang) Tutorial #11 - Package Scope](https://youtu.be/XYK4Rs80q6c).
 
 ## Notes
 
@@ -25,6 +26,7 @@ A [Go](https://golang.org/) CLI to generate sequences of colored circles with em
 - Commands:
   - `go version` (Go 1.16).
   - `go run main.go`.
+  - `go run main.go utils.go`.
 - [Numeric types](https://golang.org/ref/spec#Numeric_types) and [types](https://pkg.go.dev/builtin#pkg-types).
 - [`fmt`](https://pkg.go.dev/fmt):
   - `%f`: For floats.
