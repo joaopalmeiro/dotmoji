@@ -1,4 +1,6 @@
-# Source: https://obem.be/2015/06/01/a-quick-note-on-editorconfig.html
+# Source:
+# - https://obem.be/2015/06/01/a-quick-note-on-editorconfig.html
+# - https://github.com/editorconfig/editorconfig-core-go/blob/master/.editorconfig
 root = true
 
 [*]
@@ -14,3 +16,7 @@ insert_final_newline = true
 # - https://arcticicestudio.github.io/styleguide-markdown/rules/whitespace.html#trailing
 [*.md]
 trim_trailing_whitespace = false
+
+[{Makefile,go.mod,go.sum,*.go,.gitmodules}]
+indent_style = tab
+indent_size = 4
