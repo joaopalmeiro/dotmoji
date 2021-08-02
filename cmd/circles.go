@@ -19,10 +19,24 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package main
+package cmd
 
-import "github.com/joaopalmeiro/dotmoji/cmd"
+import (
+	"fmt"
 
-func main() {
-	cmd.Execute()
+	"github.com/spf13/cobra"
+)
+
+// circlesCmd represents the circles command
+var circlesCmd = &cobra.Command{
+	Use:   "circles",
+	Short: "Generate a sequence of colored circles",
+	Long:  `Generate a sequence of circles from space-separated colors.`,
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Println("circles called")
+	},
+}
+
+func init() {
+	rootCmd.AddCommand(circlesCmd)
 }

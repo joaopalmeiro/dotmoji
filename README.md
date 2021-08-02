@@ -259,3 +259,30 @@ func main() {
     os.WriteFile("message.txt", []byte(message), 0644)
 }
 ```
+
+### [How to build a CLI tool with Go and Cobra | Go Tutorial](https://youtu.be/-tO7zSv80UY) (by Div Rhino)
+
+- [Blog post](https://divrhino.com/articles/build-command-line-tool-go-cobra/) and [repo](https://github.com/divrhino/dadjoke).
+- [Cobra generator](https://github.com/spf13/cobra/blob/master/cobra/README.md) (to bootstrap the CLI application): `cobra init --pkg-name github.com/joaopalmeiro/dotmoji`.
+- Go modules (to handle the dependencies): `go mod init github.com/joaopalmeiro/dotmoji` + `go mod tidy`.
+- Run the CLI application: `go run main.go`.
+- When running `go run main.go` for the first time, all dependencies will be installed and a `go.sum` file (lockfile) will be created.
+- To add a new command (_camelCase_): `cobra add <name>`.
+
+#### `~/.cobra.yaml` file
+
+```yaml
+author: João Palmeiro <joaommpalmeiro@gmail.com>
+license: MIT
+```
+
+#### `~/.zshrc` file
+
+[Source](https://stackoverflow.com/a/35653185).
+
+```zsh
+# Run `go env GOPATH`.
+export GOPATH="/Users/joao.palmeiro/go"
+
+export PATH="$GOPATH/bin:$PATH"
+```
