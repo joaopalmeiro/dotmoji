@@ -286,3 +286,14 @@ export GOPATH="/Users/joao.palmeiro/go"
 
 export PATH="$GOPATH/bin:$PATH"
 ```
+
+### [Cobra](https://github.com/spf13/cobra)
+
+- Create subcommand-based CLIs.
+- Intelligent suggestions (_Did you mean this?_).
+- Basic pattern: `APPNAME VERB NOUN --ADJECTIVE` or `APPNAME COMMAND ARG --FLAG`. In other words, _Commands_ represent actions, _Args_ are "things", and _Flags_ are modifiers for those actions.
+- [User guide](https://github.com/spf13/cobra/blob/v1.2.1/user_guide.md).
+
+### Go for JavaScript Developers (by Brenna Martenson/Frontend Masters)
+
+- [Repo](https://github.com/martensonbj/fem-intro-to-go).
