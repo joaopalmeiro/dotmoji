@@ -263,9 +263,14 @@ func main() {
 ### [How to build a CLI tool with Go and Cobra | Go Tutorial](https://youtu.be/-tO7zSv80UY) (by Div Rhino)
 
 - [Blog post](https://divrhino.com/articles/build-command-line-tool-go-cobra/) and [repo](https://github.com/divrhino/dadjoke).
-- [Cobra generator](https://github.com/spf13/cobra/blob/master/cobra/README.md) (to bootstrap the CLI application): `cobra init --pkg-name github.com/joaopalmeiro/dotmoji`.
+- [Cobra generator](https://github.com/spf13/cobra/tree/v1.2.1/cobra) (to bootstrap the CLI application):
+  - `cobra init --pkg-name github.com/joaopalmeiro/dotmoji` ([templates](https://github.com/spf13/cobra/blob/v1.2.1/cobra/tpl/main.go)).
+  - `cobra --viper=false init --pkg-name github.com/joaopalmeiro/dotmoji` (no [Viper](https://github.com/spf13/viper) for configuration to keep things simpler the first time).
+  - `cobra --help`.
 - Go modules (to handle the dependencies): `go mod init github.com/joaopalmeiro/dotmoji` + `go mod tidy`.
-- Run the CLI application: `go run main.go`.
+- Run the CLI application:
+  - `go run main.go`.
+  - `go install github.com/joaopalmeiro/dotmoji` + `dotmoji --help`.
 - When running `go run main.go` for the first time, all dependencies will be installed and a `go.sum` file (lockfile) will be created.
 - To add a new command (_camelCase_): `cobra add <name>`.
 

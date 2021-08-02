@@ -31,7 +31,8 @@ import (
 var circlesCmd = &cobra.Command{
 	Use:   "circles",
 	Short: "Generate a sequence of colored circles",
-	Long:  `Generate a sequence of circles from space-separated colors.`,
+	Long: `
+Generate a sequence of colored circles from space-separated color names.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("circles called")
 	},
